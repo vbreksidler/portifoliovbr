@@ -23,21 +23,13 @@ html {
     scroll-behavior: smooth;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
-
 #middle {
     margin-top: 100%;
     padding-bottom: 25%;
 }
 
-a {
-    text-decoration: none
-}
-
 .header {
+    padding-bottom: 15%;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -47,7 +39,7 @@ a {
     align-content: flex-start;
     height: 50vw;
     min-height: 400px;
-    max-height: 450px;
+    max-height: 300px;
     min-width: 300px;
     color: #eee;
 }
@@ -60,7 +52,7 @@ a {
     bottom: 0;
     left: 0;
     z-index: -1;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.12) 40%, rgba(27, 32, 48, 1) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.12) 40%, #1b2030 100%);
 }
 
 .header:before {
@@ -78,7 +70,7 @@ a {
     background: #1B2030 url(../images/portifolio.jpg) 50% 0 no-repeat;
     background-size: 100%;
     background-attachment: fixed;
-    animation: grow 360s linear 10ms infinite;
+    animation: grow 240s linear 10ms infinite;
     transition: all 0.4s ease-in-out;
     z-index: -2
 }
@@ -86,32 +78,6 @@ a {
 .header a {
     color: #eee
 }
-
-// .menu {
-//     display: block;
-//     width: 40px;
-//     height: 30px;
-//     border: 2px solid rgb(0, 0, 0);
-//     border-radius: 3px;
-//     position: absolute;
-//     right: 20px;
-//     top: 70%;
-//     text-decoration: none
-// }
-
-// .menu:after {
-//     content: "";
-//     display: block;
-//     width: 20px;
-//     height: 3px;
-//     background: #fff;
-//     position: absolute;
-//     margin: 0 auto;
-//     top: 5px;
-//     left: 0;
-//     right: 0;
-//     box-shadow: 0 8px, 0 16px
-// }
 
 .logo {
     border: 2px solid #fff;
@@ -129,6 +95,23 @@ a {
     height: 40px
 }
 
+.meet {
+    border: 1px solid #fff;
+    border-radius: 3px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    align-content: center;
+    padding: 0px 10px;
+    font-weight: 900;
+    font-size: 1.6em;
+    line-height: 1;
+    box-sizing: border-box;
+    height: 50px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
 .sides,
 .info {
     flex: 0 0 auto;
@@ -137,7 +120,7 @@ a {
 
 .info {
     width: 100%;
-    padding: 10% 10% 0 10%;
+    padding: 8% 10% 0 10%;
     text-align: center;
     text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2)
 }
@@ -153,7 +136,15 @@ a {
     margin-bottom: 3px
 }
 
-.info h4,
+h1 {
+    font-size: 4em;
+}
+
+h4 {
+    font-size: 2em;
+}
+
+.info,
 .meta {
     font-size: 0.7em
 }
@@ -173,9 +164,66 @@ a {
 }
 
 .content {
-    padding: 5% 10%;
-    text-align: justify
+    margin: 3%;
+    padding: 3% 5%;
+    padding-bottom: 10%;
+    text-align: justify;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
 }
+
+.links {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: white;
+    padding: 50px 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.links2 {
+    background-color: #1B2030;
+    padding: 40px 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icons {
+    padding-left: 50px;
+}
+
+.icons :hover {
+    padding-right: 8px;
+}
+
+
+// .icons_linkedin {
+//     padding-left: 50px;
+// }
+
+// .icons_linkedin :hover {
+//     background-color: blue;
+//     padding-left: 50px;
+// }
+
+// .icons_instagram {
+//     padding-left: 50px;
+// }
+
+// .icons_instagram :hover {
+//     background-color: purple;
+//     padding-left: 50px;
+// }
+
+
+// .icons_github {
+//     padding-left: 50px;
+// }
+
+// .icons_github :hover {
+//     animation: up_down duration timing-function delay iteration-count direction fill-mode;
+// }
+
 
 .btn {
     color: #333;
@@ -194,4 +242,29 @@ a {
 .btn.twtr:after {
     content: "\1F426";
     padding-left: 5px
+}
+
+.bio {
+    color: black;
+}
+
+.btn_bio {
+    height: 120%;
+    font-size: 1.5em;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: #1b203000;
+    padding-left: 80%;
+    height: 40px;
+    border: none;
+    -webkit-box-shadow: 30px 30px 30px 0px rgba(27, 32, 48, 0.75);
+    -moz-box-shadow: 30px 30px 30px 0px rgba(27, 32, 48, 0.75);
+    box-shadow: 10px 10px 10px 0px rgba(27, 32, 48, 0.75);
+    border-radius: 10px;
+}
+
+.btn_bio:hover {
+    // background-color: #1b20304d;
+    background: linear-gradient(90deg, #cacaca8f 85%, #1b203000 15%);
+
 }
