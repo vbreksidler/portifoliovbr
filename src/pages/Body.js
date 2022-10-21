@@ -1,7 +1,7 @@
 import React from 'react';
-import Btn_HelloWorld from './btn_hello'
-import Btn_Languages from './btn_languages';
-import styles from './styles.module.scss';
+import Btn_HelloWorld from '../components/btn_hello'
+import Btn_Languages from '../components/btn_languages';
+import styles from '../components/styles.module.scss';
 
 function Body() {
   return (
