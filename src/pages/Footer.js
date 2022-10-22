@@ -21,6 +21,7 @@ function Footer() {
                             <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/python/python-original-wordmark.svg" title="Python" alt="Python" width="40" height="40" />
                         </div>
                     </div>
+                    <p className={styles.p_footer}> ©VBR, 2022. Desenvolvido em Javascript, com React, e estilização com Sass.</p>
                     <div className={styles.links_content}>
                         <div className={styles.links}>
                             <div className={styles.icons_linkedin}>

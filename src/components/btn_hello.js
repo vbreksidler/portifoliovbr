@@ -9,7 +9,7 @@ function Btn_HelloWorld() {
     };
     return (
         <div>
-            <button className={styles.btn_hello} onClick={toggleMenu}>Hello World !</button>
+            <button className={styles.btn_hello} onClick={toggleMenu}>Hello World</button>
             {openMenu ? (
                 <div>
                     <p>
@@ -21,7 +21,7 @@ function Btn_HelloWorld() {
                         sobre tudo ao meu redor, gostava muito de explorar lugares diferentes, observar os animais, desmontar e montar relógios, videogames,
                         controles, etc. Até hoje carrego essa vontade do novo, não atoa, eu passei por diversas áreas antes de chegar aqui, na tecnologia.
                         Trabalhei como auxiliar geral, químico de processo, desenhista mecânico, assistente administrativo em tecnologia e inovação, empreendedor,
-                        músico, mecânico, entre outros.
+                        músico, mecânico, entre varios outros.
                         Meu último emprego foi como gerente geral na empresa QuickUp, empresa familiar do meu irmao, que aluga máquinas
                         de lanches e de café para grandes instituições, como a PIB (primeira igreja batista). Amo trabalhar e amo estudar,
                         nessa minha jornada comecei 3 faculdades, química ambiental na UTFPR , administração na FAE  e a última foi comunicação
@@ -29,8 +29,8 @@ function Btn_HelloWorld() {
                     </p>
                     <p>
                         Sempre gostei de várias áreas diferentes, porém a área da tecnologia me abriu os olhos, por ser uma área dinâmica, desafiadora e empolgante, uma área que me desperta a vontade
-                        de buscar mais, criar mais, e entender mais. Claro, com a trybe meus horizontes se ampliaram, começamos devagar com os fundamentos, onde aprendi
-                        sobre Unix e bash, dominar o github, e claro a base da programação com HTML e css e lógica de programação. Quando pisquei já estava lidando com
+                        de buscar mais, criar mais, e entender mais. Com a trybe meus horizontes se ampliaram, começamos devagar com os fundamentos, onde aprendi
+                        sobre Unix e bash, dominar o github, e a base da programação com HTML e css e lógica de programação. Quando pisquei já estava lidando com
                         a arte do React em frontend, e logo mais, aprendendo sobre Node no backend, foi quando eu realmente percebi o tamanho do universo que existe na
                         programacao. A area da tecnologia me apresentou um caminho diferente aonde traz um balanco mais dinamico entre o desenvolvimento de carreira  e
                         um impacto de valores mais concretos, me sinto sempre motivado e impulsionado a tirar o melhor de mim. Na area, a habilidade de se adaptar e
