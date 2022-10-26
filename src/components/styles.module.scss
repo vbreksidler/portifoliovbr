@@ -149,6 +149,10 @@ html {
     margin-bottom: 3px
 }
 
+p {
+    font-weight: 900;
+}
+
 h1 {
     font-size: 4em;
 }
@@ -321,4 +325,9 @@ h4 {
     margin-bottom: 2%;
     display: flex;
     text-align: center;
+}
+
+.projects_content {
+    font-weight: 900;
+    font-size: 1.1em;
 }
