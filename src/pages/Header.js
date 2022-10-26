@@ -6,6 +6,11 @@ class Header extends React.Component {
   render() {
     return (
       <header>
+        <div class="sidebar_toggler">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <div className={styles.header}>
           <div className={styles.sides}>
           </div>
