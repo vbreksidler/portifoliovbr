@@ -14,7 +14,12 @@ function Btn_Projects() {
                 <div>
                     <div>
                         <p>Project Online Store</p>
-                        <img src="https://github.com/DeboraSerra/project-online-store/raw/master/project-front-master-responsive.gif"
+                        <img src="https://github.com/vbreksidler/project_online_store/blob/main/project-front-master-responsive.gif?raw=true"
+                            alt="Project Online Store" width="1000" />
+                    </div>
+                    <div>
+                        <p>Project Delivery App</p>
+                        <img src=""
                             alt="Project Online Store" width="1000" />
                     </div>
                     <a className={styles.projects_content} href="https://github.com/vbreksidler">
