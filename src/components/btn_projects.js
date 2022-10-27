@@ -17,7 +17,7 @@ function Btn_Projects() {
                         <img src="https://github.com/DeboraSerra/project-online-store/raw/master/project-front-master-responsive.gif"
                             alt="Project Online Store" width="1000" />
                     </div>
-                    <a className={styles.projects_content} href="https://github.com/vbreksidler/vbreksidler">
+                    <a className={styles.projects_content} href="https://github.com/vbreksidler">
                         Clique aqui para acessar meu repositório no Github.
                     </a>
                 </div>
