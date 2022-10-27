@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from './styles.module.scss';
 
-function Btn_Languages() {
+function Btn_my_work() {
     const [openMenu, setOpenMenu] = useState(false);
 
     const toggleMenu = () => {
@@ -25,4 +25,4 @@ function Btn_Languages() {
 }
 
 
-export default Btn_Languages;
+export default Btn_my_work;

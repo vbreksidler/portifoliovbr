@@ -1,6 +1,6 @@
 import React from 'react';
 import Btn_HelloWorld from '../components/btn_hello'
-import Btn_Languages from '../components/btn_languages';
+import Btn_my_work from '../components/btn_my_work';
 import Btn_Projects from '../components/btn_projects';
 import styles from '../components/styles.module.scss';
 
@@ -19,7 +19,7 @@ function Body() {
             <div className={styles.all_btns}>
               <a href="#btn_hello"> {<Btn_HelloWorld />}</a>
               <div id="btn_lang"></div>
-              <a href="#btn_lang"> {<Btn_Languages />}</a>
+              <a href="#btn_lang"> {<Btn_my_work />}</a>
               <div id="btn_projects"></div>
               <a href="#btn_projects"> {<Btn_Projects />}</a>
             </div>

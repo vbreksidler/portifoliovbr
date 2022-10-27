@@ -14,8 +14,6 @@ function Btn_Projects() {
                 <div>
                     <div>
                         <p>Project Online Store</p>
-                        <img src="https://github.com/vbreksidler/vbreksidler/blob/master/project-online-store-master/project-gif-nonresponsive.gif?raw=true"
-                            alt="Project Online Store" width="1000" />
                         <img src="https://github.com/DeboraSerra/project-online-store/raw/master/project-front-master-responsive.gif"
                             alt="Project Online Store" width="1000" />
                     </div>
