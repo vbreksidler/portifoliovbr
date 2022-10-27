@@ -15,12 +15,12 @@ function Btn_Projects() {
                     <div>
                         <p>Project Online Store</p>
                         <img src="https://github.com/vbreksidler/project_online_store/blob/main/project-front-master-responsive.gif?raw=true"
-                            alt="Project Online Store" width="1000" />
+                            alt="Project Online Store" width="80%" />
                     </div>
                     <div>
                         <p>Project Delivery App</p>
-                        <img src=""
-                            alt="Project Online Store" width="1000" />
+                        <img src="https://github.com/vbreksidler/portifoliovbr/blob/master/src/images/output_name.gif?raw=true"
+                            alt="Project Delivery App" width="80%" />
                     </div>
                     <a className={styles.projects_content} href="https://github.com/vbreksidler">
                         Clique aqui para acessar meu repositório no Github.
