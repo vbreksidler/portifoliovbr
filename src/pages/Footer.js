@@ -1,31 +1,6 @@
 import React from 'react';
 import styles from '../components/styles.module.scss';
 
-function Sidebar() {
-    return (
-        <aside id="sidebar">
-            <div class="sidebar_content sidebar_head">
-                <h1>Sidebar</h1>
-            </div>
-            <div class="sidebar_content sidebar_body">
-                <nav class="side_navlinks">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="sidebar_content sidebar_foot">
-                <p>Sidebar Footer</p>
-            </div>
-        </aside>
-
-    )
-}
-
 function Footer() {
     return (
         <section className={styles.footer}>
