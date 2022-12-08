@@ -1,1 +1,5 @@
-a
+//Mantis: rgb(130, 209, 115)
+//Mint Green: rgb(171, 250, 169)
+//Cadet Gray: rgb(149, 163, 179)
+//Spanish Violet: rgb(76, 44, 105)
+//Dark Purple: rgb(66, 37, 59)
