@@ -140,8 +140,8 @@ html {
 
 .author {
     display: inline-block;
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     background: url(../images/img_perfil.jpg) top no-repeat;
     background-size: cover;
@@ -217,15 +217,19 @@ h4 {
 }
 
 .content_btns {
+    // height: 300px;
     color: black;
 }
 
 .btn_hello,
-.btn_languages,
+.btn_work,
 .btn_projects {
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 3px;
-    text-decoration: none;
+    // border: 1px solid rgb(0, 0, 0);
+    // border-radius: 3px;
+    box-shadow: 5px 10px 10px 0px rgba(27, 32, 48, 0.75);
+    border: none;
+    border-radius: 5px;
+    background-color: white;
     display: inline-flex;
     align-items: center;
     align-content: center;
@@ -233,18 +237,29 @@ h4 {
     line-height: 1;
     box-sizing: border-box;
     height: 75px;
-    width: 100%;
+    width: 33%;
     margin-top: 35px;
     margin-bottom: 20px;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .btn_hello:hover,
-.btn_languages:hover,
+.btn_work:hover,
 .btn_projects:hover {
-    border: 1px solid rgb(255, 255, 255);
-    color: #8FE3CF;
-    background: #2B4865;
+    border-radius: 5px;
+    color: rgba(0, 189, 157, 0.959);
+    background-color: black;
+    box-shadow: 5px 10px 10px 0px rgba(0, 189, 157, 0.959);
+}
+
+.content_hello,
+.content_work {
+    border-radius: 5px;
+    margin: 3%;
+    padding: 3%;
+    color: rgba(0, 189, 157, 0.959);
+    background-color: black;
+    box-shadow: 5px 10px 10px 0px rgba(0, 189, 157, 0.959);
 }
 
 .all_btns {
@@ -332,7 +347,105 @@ h4 {
 }
 
 .projects_content {
-    margin: 50px;
-    font-weight: 900;
+    background-color: black;
+    width: 30%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    height: 50px;
+    margin: 10px;
+    padding-left: 3%;
+    font-weight: lighter;
     font-size: 1.1em;
+
+    a {
+        font-size: 1.5em;
+        color: rgba(0, 189, 157, 0.959);
+    }
+
+}
+
+.projects_content:hover {
+    box-shadow: 3px 5px 5px 0px rgba(0, 189, 157, 0.959);
+
+}
+
+.section_projects {
+    border-radius: 5px;
+    margin: 1%;
+    padding: 1%;
+    color: rgba(0, 189, 157, 0.959);
+    background-color: black;
+    box-shadow: 5px 10px 10px 0px rgba(0, 189, 157, 0.959);
+    height: 900px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.container_work {
+    position: relative;
+    width: 320px;
+    height: 350px;
+    margin: 100px auto 0 auto;
+    perspective: 2000px;
+}
+
+.carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 60s infinite forwards linear;
+}
+
+.carousel__face {
+    position: absolute;
+    width: 600px;
+    height: 374px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 189, 157, 0.075);
+    display: flex;
+    box-shadow: 5px 10px 10px 0px rgba(0, 189, 157, 0.411);
+}
+
+span {
+    color: #8FE3CF;
+    margin: 3%;
+    font-size: 2rem;
+}
+
+
+.carousel__face:nth-child(1) {
+    background-image: url("https://github.com/vbreksidler/project_online_store/blob/main/project-front-master-responsive.gif?raw=true");
+    transform: rotateY(0deg) translateZ(300px);
+}
+
+.carousel__face:nth-child(2) {
+    background-image: url("https://github.com/vbreksidler/portifoliovbr/blob/master/src/images/output_name.gif?raw=true");
+    transform: rotateY(90deg) translateZ(300px);
+}
+
+.carousel__face:nth-child(3) {
+    background-image: url("");
+    transform: rotateY(180deg) translateZ(300px);
+}
+
+.carousel__face:nth-child(4) {
+    background-image: url("");
+    transform: rotateY(270deg) translateZ(300px);
+}
+
+
+@keyframes rotate360 {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(-360deg);
+    }
 }

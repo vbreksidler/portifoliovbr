@@ -9,9 +9,9 @@ function Btn_my_work() {
     };
     return (
         <div>
-            <button className={styles.btn_languages} onClick={toggleMenu}>Sobre meu trabalho</button>
+            <button className={styles.btn_work} onClick={toggleMenu}>Sobre meu trabalho</button>
             {openMenu ? (
-                <div>
+                <div className={styles.content_work}>
                     <p>
                         • Conhecimentos Soft Skills: Proativo, organizado, dinâmico e comunicativo, com habilidade em adaptar-se às novas rotinas e, facilidade no relacionamento interpessoal.
                     </p>

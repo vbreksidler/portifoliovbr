@@ -9,34 +9,28 @@ function Btn_Projects() {
     };
     return (
         <div>
-            <button className={styles.btn_languages} onClick={toggleMenu}>Projetos</button>
+            <button className={styles.btn_work} onClick={toggleMenu}>Projetos</button>
             {openMenu ? (
-                <div>
+                <section className={styles.section_projects}>
                     <div className={styles.projects_content}>
                         <a href="https://github.com/vbreksidler/project_online_store">
-                            Clique aqui para acessar o repositório Project Online Store
-                            <div>
-                                <img src="https://github.com/vbreksidler/project_online_store/blob/main/project-front-master-responsive.gif?raw=true"
-                                    alt="Project Online Store" width="80%" />
-                            </div>
+                            1 Project Online Store
                         </a>
                     </div>
                     <div className={styles.projects_content}>
                         <a href="https://github.com/vbreksidler/project_delivery_app">
-                            Clique aqui para acessar o repositório Delivery App
-                            <div>
-                                <img src="https://github.com/vbreksidler/portifoliovbr/blob/master/src/images/output_name.gif?raw=true"
-                                    alt="Project Delivery App" width="80%" />
-                            </div>
+                            2 Delivery App
                         </a>
                     </div>
-                    <div>
-                        <a href="https://github.com/vbreksidler">
-                            Clique aqui para acessar meu repositório no Github.
-                        </a>
+                    <div className={styles.container_work}>
+                        <div className={styles.carousel}>
+                            <div className={styles.carousel__face}><span>1</span></div>
+                            <div className={styles.carousel__face}><span>2</span></div>
+                            <div className={styles.carousel__face}><span>3</span></div>
+                            <div className={styles.carousel__face}><span>4</span></div>
+                        </div>
                     </div>
-
-                </div>
+                </section>
             ) : null}
         </div>
     );

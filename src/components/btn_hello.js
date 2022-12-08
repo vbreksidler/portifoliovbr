@@ -11,7 +11,7 @@ function Btn_HelloWorld() {
         <div>
             <button className={styles.btn_hello} onClick={toggleMenu}>Hello World</button>
             {openMenu ? (
-                <div>
+                <div className={styles.content_hello}>
                     <p>
                         Nasci em Curitiba/PR, acredito no trabalho com excelência, na cooperação, no respeito e na prática da empatia.
                         Sei que sozinho consigo chegar mais rápido ao objetivo, mas em time, posso ir muito além dele!
