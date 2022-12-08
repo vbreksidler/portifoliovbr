@@ -10,7 +10,9 @@ class App extends React.Component {
     return (
       <div className={styles.App}>
         <Header />
-        <Body />
+        <div className={styles.body_page}>
+          <Body />
+        </div>
         <Footer />
       </div>);
   }
