@@ -9,7 +9,7 @@ function Btn_my_work() {
     };
     return (
         <div>
-            <button className={styles.btn_work} onClick={toggleMenu}>Sobre meu trabalho</button>
+            <button className={styles.main} onClick={toggleMenu}>Sobre meu trabalho</button>
             {openMenu ? (
                 <div className={styles.content_work}>
                     <p>

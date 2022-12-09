@@ -9,9 +9,10 @@ function Btn_Projects() {
     };
     return (
         <div>
-            <button className={styles.btn_work} onClick={toggleMenu}>Projetos</button>
+            <button className={styles.main} onClick={toggleMenu}>Projetos</button>
             {openMenu ? (
                 <section className={styles.section_projects}>
+                    <p>Select your project:</p>
                     <div className={styles.projects_content}>
                         <a href="https://github.com/vbreksidler/project_online_store">
                             1 Project Online Store

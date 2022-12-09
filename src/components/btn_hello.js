@@ -9,15 +9,15 @@ function Btn_HelloWorld() {
     };
     return (
         <div>
-            <button className={styles.btn_hello} onClick={toggleMenu}>Hello World</button>
+            <button className={styles.main} onClick={toggleMenu}>Hello World</button>
             {openMenu ? (
                 <div className={styles.content_hello}>
                     <p>
-                        Nasci em Curitiba/PR, acredito no trabalho com excelência, na cooperação, no respeito e na prática da empatia.
+                        Acredito no trabalho com excelência, na cooperação, no respeito e na prática da empatia.
                         Sei que sozinho consigo chegar mais rápido ao objetivo, mas em time, posso ir muito além dele!
                     </p>
                     <p>
-                        Desde sempre fui muito criativo, e também sempre tive muita curiosidade
+                        Nasci em Curitiba/PR, desde sempre fui muito criativo, e também sempre tive muita curiosidade
                         sobre tudo ao meu redor, gostava muito de explorar lugares diferentes, observar os animais, desmontar e montar relógios, videogames,
                         controles, etc. Até hoje carrego essa vontade do novo, não atoa, eu passei por diversas áreas antes de chegar aqui, na tecnologia.
                         Trabalhei como auxiliar geral, químico de processo, desenhista mecânico, assistente administrativo em tecnologia e inovação, empreendedor,
