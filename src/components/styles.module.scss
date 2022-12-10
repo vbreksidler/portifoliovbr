@@ -4,7 +4,7 @@
     }
 
     50% {
-        transform: scale(1.2) translateY(-400px)
+        transform: scale(1.5) translateY(-200px)
     }
 }
 
@@ -74,12 +74,14 @@
 
 
 .App {
-
+    line-height: 1.6;
     text-align: center;
 }
 
+//header
+
 .body_page {
-    border: solid 5px rgb(113, 255, 110);
+    border: solid 3px rgb(113, 255, 110);
     border-top: none;
     background: rgb(19, 19, 19);
     box-shadow: 0px 0px 100px 10px rgb(113, 255, 110);
@@ -116,6 +118,9 @@ html {
     scroll-behavior: smooth;
 }
 
+.open_content {
+    margin-bottom: 15%;
+}
 
 #middle {
     margin-top: 100%;
@@ -179,7 +184,7 @@ html {
     animation: grow 60s linear 10ms infinite;
     transition: all 0.4s ease-in-out;
     z-index: -2;
-    box-shadow: 0px 0px 100px 100px rgb(113, 255, 110);
+    box-shadow: 0px 0px 10px 10px rgb(113, 255, 110);
     border: none;
 }
 
@@ -262,22 +267,18 @@ h4 {
 
 
 .content {
-    margin-top: 3%;
-    margin-left: 3%;
-    margin-right: 3%;
-    padding: 9% 5%;
-    padding-bottom: 10%;
+    display: flex;
+    padding-left: 7%;
     text-align: justify;
     border-bottom: 1px solid rgb(113, 255, 110);
     border-top: solid 1px rgb(113, 255, 110);
-    margin-bottom: 10%;
 }
 
 .p_content {
     text-shadow: 0 10px 10px black;
     border-radius: 5px;
-    margin-left: 25%;
-    margin-right: 25%;
+    // margin-left: 25%;
+    // margin-right: 25%;
     padding: 1%;
     color: rgb(171, 250, 169);
     text-align: center;
@@ -287,14 +288,13 @@ h4 {
 
 .content_hello,
 .content_work {
-    border-radius: 5px;
     border: none;
-    margin: 3%;
+    // margin: 1%;
     padding: 3%;
     color: rgb(171, 250, 169);
-    background-color: rgba(0, 0, 0, 0.8);
-    box-shadow: 2px 4px 4px 0px #53DD6C;
+    background-color: #ffffff04;
     font-size: 1.3em;
+    border-bottom: 1px solid rgb(113, 255, 110);
 }
 
 .fixed_footer {
@@ -369,51 +369,49 @@ h4 {
 }
 
 .projects_content {
-    background-color: rgb(0, 0, 0, 0.9);
+    background-color: rgb(119, 255, 119);
     width: 15%;
     border-radius: 5px;
     display: flex;
     align-items: center;
     align-content: center;
     height: 50px;
-    margin: 2px;
-    padding-left: 1%;
+    margin: 10px;
+    // padding-left: 1%;
     font-size: 1.1em;
-    margin-left: 100px;
+    // margin-left: 100px;
 
     a {
         margin-left: 20px;
         font-size: 0.9em;
-        color: rgb(113, 255, 110);
+        color: black;
     }
 
 }
 
 .projects_content:hover {
     color: rgb(113, 255, 110);
-    box-shadow: 0px 0px 2px 2px #53DD6C;
+    background-color: #ffffff;
+    // box-shadow: 0px 0px 2px 2px #ffffff;
 }
 
 .section_projects {
-    p {
-        margin-top: 50px;
-        margin-left: 5%;
-    }
-
-    border-radius: 5px;
-    margin: 3%;
-    margin-left: 10%;
-    padding: 1%;
-    text-shadow: 0 10px 10px #53DD6C;
+    padding-bottom: 3%;
     color: rgb(130, 209, 115);
     background-color: rgb(0, 0, 0, 0.9);
-    box-shadow: 2px 4px 4px 0px #53DD6C;
+    // box-shadow: 2px 4px 4px 0px #53DD6C;
     height: 800px;
-    width: 85%;
-    flex-direction: column;
+    width: 100%;
+    border-bottom: 1px solid rgb(113, 255, 110);
+
+    // flex-direction: column;
+    p {
+        font-size: 2em;
+    }
 }
 
 .container_work {
+    margin-left: 3%;
     position: relative;
     width: 320px;
     height: 350px;
@@ -437,8 +435,6 @@ h4 {
     left: 10px;
     right: 10px;
     background-size: cover;
-    box-shadow: inset 0 0 0 2000px #53DD6C;
-    ;
     display: flex;
     box-shadow: 0px 2px 2px 2px #53DD6C;
 }
@@ -467,21 +463,28 @@ h4 {
 
 //button
 
-.main {
+.content_btns {
     display: flex;
-    flex-direction: column;
+}
+
+.main {
+    // flex-direction: row;
+    // display: flex;
+    // flex-direction: column;
     transform: rotatex(10deg);
     animation: rotateAngle 6s linear infinite;
 }
 
 button {
-    display: block;
-    position: relative;
-    margin: 0.5em 0;
+    flex-direction: row;
+    // display: inline-block;
+    // position: relative;
+    margin: 2em;
     padding: .8em 2.2em;
     cursor: pointer;
 
-    background: #ffffff;
+    color: black;
+    background: rgb(216, 245, 216);
     border: none;
     border-radius: .4em;
 
@@ -520,15 +523,15 @@ button {
     }
 
     &:after {
-        background-color: #5D00FF;
+        background-color: #56638A;
     }
 
     &:before {
-        background-color: #FF1731;
+        background-color: #17ff5d;
     }
 
     &:hover {
-        background-color: #FFF65B;
+        background-color: #ffffff;
         transition: background .3s 0.1s;
     }
 
