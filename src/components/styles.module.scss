@@ -1,3 +1,5 @@
+// keyframes
+
 @keyframes grow {
     0% {
         transform: scale(1) translateY(0px)
@@ -73,61 +75,42 @@
 }
 
 
+@keyframes rotateAngle {
+    0% {
+        transform: rotateY(0deg) rotateX(10deg);
+        animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1);
+    }
+
+    25% {
+        transform: rotateY(20deg) rotateX(10deg);
+    }
+
+    50% {
+        transform: rotateY(0deg) rotateX(10deg);
+        animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1);
+    }
+
+    75% {
+        transform: rotateY(-20deg) rotateX(10deg);
+    }
+
+    100% {
+        transform: rotateY(0deg) rotateX(10deg);
+    }
+}
+
+
 .App {
     line-height: 1.6;
     text-align: center;
 }
 
-//header
-
-.body_page {
-    border: solid 3px rgb(113, 255, 110);
-    border-top: none;
-    background: rgb(19, 19, 19);
-    box-shadow: 0px 0px 100px 10px rgb(113, 255, 110);
-    padding-top: 5%;
-}
-
-a {
-    color: black;
-    text-decoration: none;
-}
-
-a:after {
-    color: black;
-}
-
-@mixin background($imgpath, $position: 0 0, $repeat: no-repeat) {
-    background: {
-        image: url($imgpath);
-        position: $position;
-        repeat: $repeat;
-    }
-}
-
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i');
-
-html,
-body {
-    margin: 0;
-    height: 100%;
-    font-family: 'Josefin Sans', sans-serif;
-}
-
-html {
-    scroll-behavior: smooth;
-}
+// header
 
 .open_content {
     margin-bottom: 15%;
 }
 
-#middle {
-    margin-top: 100%;
-    padding-bottom: 25%;
-}
-
-.sides,
 .info {
     flex: 0 0 auto;
     width: 50%
@@ -241,6 +224,47 @@ html {
     margin-bottom: 3px
 }
 
+// body
+
+.body_page {
+    border: solid 3px rgb(113, 255, 110);
+    border-top: none;
+    background: rgb(19, 19, 19);
+    box-shadow: 0px 0px 100px 10px rgb(113, 255, 110);
+    padding-top: 5%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:after {
+    color: black;
+}
+
+@mixin background($imgpath, $position: 0 0, $repeat: no-repeat) {
+    background: {
+        image: url($imgpath);
+        position: $position;
+        repeat: $repeat;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i');
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 p {
     font-size: larger;
 }
@@ -297,77 +321,6 @@ h4 {
     border-bottom: 1px solid rgb(113, 255, 110);
 }
 
-.fixed_footer {
-    width: 100%;
-    background: #000000;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    display: flex;
-    flex-direction: row;
-    padding-left: 7%;
-}
-
-.fixed_footer p {
-    color: rgb(171, 250, 169);
-    column-count: 2;
-    column-gap: 50px;
-    font-size: 1em;
-    font-weight: 300;
-}
-
-.content_footer {
-    width: 90%;
-    padding-top: 5px;
-    padding-bottom: 1%;
-    max-height: 80px;
-    display: inline-flex;
-}
-
-.links_content {
-    padding-left: 3%;
-    margin-right: 15px;
-    background-color: hsl(0, 0%, 0%);
-}
-
-.links {
-    margin-right: 15%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    background-color: #000000;
-    display: flex;
-    margin-left: 10%;
-}
-
-
-.icon_content {
-    max-width: max-content;
-    margin-right: 3%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    background-color: #000000;
-    display: flex;
-}
-
-.icons_linkedin {
-    padding-left: 10px;
-}
-
-.icons_instagram {
-    padding-left: 10px;
-}
-
-.icons_github {
-    padding-left: 10px;
-}
-
-.p_footer {
-    margin-top: 2%;
-    margin-bottom: 2%;
-    display: flex;
-    text-align: center;
-}
-
 .projects_content {
     background-color: rgb(119, 255, 119);
     width: 15%;
@@ -410,70 +363,6 @@ h4 {
     }
 }
 
-.container_work {
-    margin-left: 3%;
-    position: relative;
-    width: 320px;
-    height: 350px;
-    margin: 100px auto 0 auto;
-    perspective: 2000px;
-}
-
-.carousel {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    animation: rotate360 60s infinite forwards linear;
-}
-
-.carousel__face {
-    position: absolute;
-    width: 600px;
-    height: 374px;
-    top: 20px;
-    left: 10px;
-    right: 10px;
-    background-size: cover;
-    display: flex;
-    box-shadow: 0px 2px 2px 2px #53DD6C;
-}
-
-
-.carousel__face:nth-child(1) {
-    background-image: url("https://github.com/vbreksidler/project_online_store/blob/main/project-front-master-responsive.gif?raw=true");
-    transform: rotateY(0deg) translateZ(300px);
-}
-
-.carousel__face:nth-child(2) {
-    background-image: url("https://github.com/vbreksidler/portifoliovbr/blob/master/src/images/output_name.gif?raw=true");
-    transform: rotateY(90deg) translateZ(300px);
-}
-
-.carousel__face:nth-child(3) {
-    background-image: url("");
-    transform: rotateY(180deg) translateZ(300px);
-}
-
-.carousel__face:nth-child(4) {
-    background-image: url("");
-    transform: rotateY(270deg) translateZ(300px);
-}
-
-
-//button
-
-.content_btns {
-    display: flex;
-}
-
-.main {
-    // flex-direction: row;
-    // display: flex;
-    // flex-direction: column;
-    transform: rotatex(10deg);
-    animation: rotateAngle 6s linear infinite;
-}
 
 button {
     flex-direction: row;
@@ -546,26 +435,134 @@ button {
     }
 }
 
-@keyframes rotateAngle {
-    0% {
-        transform: rotateY(0deg) rotateX(10deg);
-        animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1);
-    }
+.container_work {
+    margin-left: 3%;
+    position: relative;
+    width: 320px;
+    height: 350px;
+    margin: 100px auto 0 auto;
+    perspective: 2000px;
+}
 
-    25% {
-        transform: rotateY(20deg) rotateX(10deg);
-    }
+.carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 60s infinite forwards linear;
+}
 
-    50% {
-        transform: rotateY(0deg) rotateX(10deg);
-        animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1);
-    }
+.carousel__face {
+    position: absolute;
+    width: 600px;
+    height: 374px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    display: flex;
+    box-shadow: 0px 2px 2px 2px #53DD6C;
+}
 
-    75% {
-        transform: rotateY(-20deg) rotateX(10deg);
-    }
 
-    100% {
-        transform: rotateY(0deg) rotateX(10deg);
-    }
+.carousel__face:nth-child(1) {
+    background-image: url("https://github.com/vbreksidler/project_online_store/blob/main/project-front-master-responsive.gif?raw=true");
+    transform: rotateY(0deg) translateZ(300px);
+}
+
+.carousel__face:nth-child(2) {
+    background-image: url("https://github.com/vbreksidler/portifoliovbr/blob/master/src/images/output_name.gif?raw=true");
+    transform: rotateY(90deg) translateZ(300px);
+}
+
+.carousel__face:nth-child(3) {
+    background-image: url("");
+    transform: rotateY(180deg) translateZ(300px);
+}
+
+.carousel__face:nth-child(4) {
+    background-image: url("");
+    transform: rotateY(270deg) translateZ(300px);
+}
+
+.content_btns {
+    display: flex;
+}
+
+.main {
+    transform: rotatex(10deg);
+    animation: rotateAngle 6s linear infinite;
+}
+
+// FOOTER
+
+.fixed_footer {
+    width: 100%;
+    background: #000000;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    padding-left: 7%;
+}
+
+.fixed_footer p {
+    color: rgb(171, 250, 169);
+    column-count: 2;
+    column-gap: 50px;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.content_footer {
+    width: 90%;
+    padding-top: 5px;
+    padding-bottom: 1%;
+    max-height: 80px;
+    display: inline-flex;
+}
+
+.links_content {
+    padding-left: 3%;
+    margin-right: 15px;
+    background-color: hsl(0, 0%, 0%);
+}
+
+.links {
+    margin-right: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #000000;
+    display: flex;
+    margin-left: 10%;
+}
+
+
+.icon_content {
+    max-width: max-content;
+    margin-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #000000;
+    display: flex;
+}
+
+.icons_linkedin {
+    padding-left: 10px;
+}
+
+.icons_instagram {
+    padding-left: 10px;
+}
+
+.icons_github {
+    padding-left: 10px;
+}
+
+.p_footer {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    text-align: center;
 }
