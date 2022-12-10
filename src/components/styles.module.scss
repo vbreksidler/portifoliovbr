@@ -301,8 +301,6 @@ h4 {
 .p_content {
     text-shadow: 0 10px 10px black;
     border-radius: 5px;
-    // margin-left: 25%;
-    // margin-right: 25%;
     padding: 1%;
     color: rgb(171, 250, 169);
     text-align: center;
@@ -313,7 +311,6 @@ h4 {
 .content_hello,
 .content_work {
     border: none;
-    // margin: 1%;
     padding: 3%;
     color: rgb(171, 250, 169);
     background-color: #ffffff04;
@@ -330,9 +327,7 @@ h4 {
     align-content: center;
     height: 50px;
     margin: 10px;
-    // padding-left: 1%;
     font-size: 1.1em;
-    // margin-left: 100px;
 
     a {
         margin-left: 20px;
@@ -345,19 +340,16 @@ h4 {
 .projects_content:hover {
     color: rgb(113, 255, 110);
     background-color: #ffffff;
-    // box-shadow: 0px 0px 2px 2px #ffffff;
 }
 
 .section_projects {
     padding-bottom: 3%;
     color: rgb(130, 209, 115);
     background-color: rgb(0, 0, 0, 0.9);
-    // box-shadow: 2px 4px 4px 0px #53DD6C;
     height: 800px;
     width: 100%;
     border-bottom: 1px solid rgb(113, 255, 110);
 
-    // flex-direction: column;
     p {
         font-size: 2em;
     }
@@ -366,8 +358,6 @@ h4 {
 
 button {
     flex-direction: row;
-    // display: inline-block;
-    // position: relative;
     margin: 2em;
     padding: .8em 2.2em;
     cursor: pointer;
