@@ -79,9 +79,10 @@
 }
 
 .body_page {
-    box-shadow: 0px 0px 100px 10px #53DD6C;
+    border: solid 5px rgb(113, 255, 110);
+    background: rgb(19, 19, 19);
+    box-shadow: 0px 0px 100px 10px rgb(113, 255, 110);
     padding-top: 5%;
-    background: linear-gradient(to left, #56638a 60%, rgb(130, 209, 115) 100%);
 }
 
 a {
@@ -160,7 +161,6 @@ html {
 }
 
 .header:before {
-
     content: "";
     width: 100%;
     height: 100%;
@@ -178,7 +178,7 @@ html {
     animation: grow 60s linear 10ms infinite;
     transition: all 0.4s ease-in-out;
     z-index: -2;
-    box-shadow: 0px 0px 100px 100px #53DD6C;
+    box-shadow: 0px 0px 100px 100px rgb(113, 255, 110);
     border: none;
 }
 
@@ -267,8 +267,9 @@ h4 {
     padding: 3% 5%;
     padding-bottom: 10%;
     text-align: justify;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
+    border-bottom: 1px solid rgb(113, 255, 110);
+    border-top: solid 1px rgb(113, 255, 110);
+    margin-bottom: 10%;
 }
 
 .p_content {
@@ -479,7 +480,7 @@ button {
     padding: .8em 2.2em;
     cursor: pointer;
 
-    background: #ffffff2f;
+    background: #ffffff;
     border: none;
     border-radius: .4em;
 
