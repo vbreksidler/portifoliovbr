@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Btn_my_work from '../components/btn_my_work';
-import Btn_Projects from '../components/btn_projects';
 import styles from '../components/styles.module.scss';
 
 function Body() {
