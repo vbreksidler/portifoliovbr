@@ -309,7 +309,7 @@ h4 {
     bottom: 0;
     display: flex;
     flex-direction: row;
-    padding-left: 7%;
+    padding: 0 5%;
 }
 
 .fixed_footer p {
@@ -322,10 +322,9 @@ h4 {
 
 .content_footer {
     width: 90%;
-    padding-top: 5px;
-    padding-bottom: 1%;
     max-height: 80px;
     display: inline-flex;
+    justify-content: space-around;
 }
 
 .links_content {
