@@ -102,6 +102,11 @@ function Body() {
                 2 Delivery App
               </a>
             </div>
+            <div className={styles.projects_content}>
+              <a href="https://github.com/vbreksidler/project-patient-register">
+                3 Patient Register
+              </a>
+            </div>
             <div className={styles.container_work}>
               <div className={styles.carousel}>
                 <div className={styles.carousel__face}><span>1</span></div>
