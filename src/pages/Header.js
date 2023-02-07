@@ -16,12 +16,8 @@ class Header extends React.Component {
               <div className={styles.author} />
               <h4>Full Stack Web Developer</h4>
             </div>
-            <div>
-              <a href="#down" className={styles.meet}>Clique aqui para me conhecer melhor</a>
-            </div>
           </div>
         </div>
-        <div id="down"></div>
       </header >
     );
   }
