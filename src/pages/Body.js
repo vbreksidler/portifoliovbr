@@ -32,7 +32,7 @@ function Body() {
       <div className={styles.p_content1}>
         <h3>• SOFT skills</h3>
         <p>
-          Proativo, organizado, dinâmico e comunicativo, com habilidade em <span className={styles.letter_p}>adaptar-se</span> às novas rotinas e, facilidade no relacionamento interpessoal.
+          Proativo, organizado, dinâmico e comunicativo, com habilidade em adaptar-se às novas rotinas e, facilidade no relacionamento interpessoal.
         </p>
         <h3>• HARD skills</h3>
         <p>
