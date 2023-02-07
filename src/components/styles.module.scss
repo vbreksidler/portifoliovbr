@@ -338,7 +338,6 @@ h4 {
     flex-direction: row;
     // padding: 0 5%;
     max-height: 80px;
-
     // padding-left: 41%;
 }
 
@@ -361,16 +360,16 @@ h4 {
 }
 
 .links_content {
+    margin-top: 5px;
     margin-left: 11%;
     // align-self: center;
 }
 
 
 .icon_content {
-    max-width: max-content;
-    margin-right: 3%;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    // max-width: max-content;
+    // padding-top: 5px;
+    // padding-bottom: 5px;
     background-color: #000000;
 }
 
@@ -386,10 +385,6 @@ h4 {
 //     padding-left: 5px;
 // }
 
-.icons_vbr {
-    padding-left: 18%;
-    margin-right: 10px;
-}
 
 .p_footer {
     // margin-left: 25%;
@@ -400,28 +395,28 @@ h4 {
 }
 
 .projects_content {
-    width: 20%;
-    margin-left: 5%;
+    // width: 20%;
+    // margin-left: 5%;
     // margin-right: 60%;
     display: flex;
     // align-items: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     font-size: 1em;
     // align-content: center;
 
     a {
-        width: 20%;
-        letter-spacing: 4px;
+        width: 40%;
+        letter-spacing: 1px;
         line-height: 1.1;
         width: 94px;
         height: 75%;
         border-radius: 3px;
         margin: 20px;
-        margin-left: 50px;
+        margin-left: 40px;
         padding: 25px;
         padding-top: 20px;
-        padding-right: 40px;
+        padding-right: 20px;
         border: 1px solid rgb(171, 250, 169);
         border-radius: 3px;
         color: rgb(171, 250, 169);
@@ -430,12 +425,26 @@ h4 {
 
     a:hover {
         font-style: oblique;
-        letter-spacing: 5px;
+        letter-spacing: 3px;
         // width: 98px;
         // height: 80%;
         font-size: 1.009em;
         border: 1px solid rgb(171, 250, 169);
         color: rgb(76, 44, 105);
+    }
+
+    p {
+        // border-top: solid 1px rgb(113, 255, 110);
+        // width: 100%;
+        text-shadow: 0 10px 10px black;
+        // margin-left: 10%;
+        // margin-right: 10%;
+        margin-bottom: 5%;
+        padding: 1%;
+        color: white;
+        // text-align: center;
+        font-size: 0.8em;
+        font-family: 'Josefin Sans', sans-serif;
     }
 
 }
@@ -448,7 +457,7 @@ h4 {
     font-family: 'Josefin Sans', sans-serif;
     width: 80%;
     border-top: solid 1px rgb(113, 255, 110);
-    height: 1000px;
+    height: 90%;
 }
 
 .container_work {

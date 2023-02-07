@@ -23,7 +23,6 @@ function Footer() {
                             </a>
                         </div>
                     </div>
-                    <p className={styles.icons_vbr}>©VBR, 2023.</p>
                 </div>
                 <div class={styles.content_footer}>
                     <div className={styles.icon_content}>

@@ -55,24 +55,41 @@ function Body() {
       <section className={styles.section_projects}>
         <h3>PROJETOS</h3>
         <div className={styles.projects_content}>
-          <a href="https://github.com/vbreksidler/project_online_store">
-            Project Online Store
-          </a>
-          <a href="https://github.com/vbreksidler/project_delivery_app">
-            Delivery App
-          </a>
-          <a href="https://github.com/vbreksidler/project-patient-register">
-            Patient Register
-          </a>
+          <div className={styles.p_section_projects}>
+            <a href="https://github.com/vbreksidler/project_online_store">
+              Online Store
+            </a>
+            <p> O projeto possui design responsivo, e o objetivo é um carrinho de compras online, onde a pessoa usuária pode adicionar, remover, alterar, verificar
+              detalhes dos produtos, finalizar a compra e fazer checkout.
+
+            </p>
+          </div>
+          <div className={styles.p_section_projects}>
+            <a href="https://github.com/vbreksidler/project_delivery_app">
+              Delivery App
+            </a>
+            <p>Esse é um aplicativo full-stack, ou seja, possuí integração entre o front-end e o back-end. O objetivo é solucionar o problema do cliente,
+              com um sistema que deve possuir:
+              Acesso via login com funções diferentes(comprador, vendedor e administrador).
+              Fazer a comunicação entre clientes e pessoas vendedoras.
+              A pessoa cliente deve ter informações se o pedido está sendo preparado ou se já saiu pra entrega.
+            </p>
+          </div>
+          <div className={styles.p_section_projects}>
+            <a href="https://github.com/vbreksidler/project-patient-register">
+              Patient Register
+            </a>
+            <p>É um projeto desafio, e o objetivo é uma aplicação web (CRUD) para gerenciar os registros de pacientes (nome do paciente, data de nascimento, e-mail e endereço) usando um banco de dados em nuvem.</p>
+          </div>
         </div>
-        <div className={styles.container_work}>
+        {/* <div className={styles.container_work}>
           <div className={styles.carousel}>
             <div className={styles.carousel__face}><span>1</span></div>
             <div className={styles.carousel__face}><span>2</span></div>
             <div className={styles.carousel__face}><span>3</span></div>
             <div className={styles.carousel__face}><span>4</span></div>
           </div>
-        </div>
+        </div> */}
       </section>
       <section className={styles.content}>
         <div className={styles.content_btns}>
