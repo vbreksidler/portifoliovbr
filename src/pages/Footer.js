@@ -23,6 +23,7 @@ function Footer() {
                             </a>
                         </div>
                     </div>
+                    <p className={styles.icons_vbr}>©VBR, 2023.</p>
                 </div>
                 <div class={styles.content_footer}>
                     <div className={styles.icon_content}>
@@ -40,7 +41,6 @@ function Footer() {
                             <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/python/python-original-wordmark.svg" title="Python" alt="Python" width="40" height="40" />
                         </div> */}
                     </div>
-                    <p className={styles.p_footer}> ©VBR, 2023.</p>
                 </div>
             </footer>
         </section>

@@ -25,16 +25,16 @@ function Body() {
       <div className={styles.p_content}>
         <h3>HELLO WORLD</h3>
         <p>
-          Obrigado pela visita! Sou Desenvolvedor de Software e através da tecnologia e inovação, almejo melhorar a vida das pessoas.
-          Sou apaixonado pela metamorfose, pelo novo, pelo desconhecido e claro, pela tecnologia.
+          Obrigado pela visita! Sou Desenvolvedor de Software e através da <span className={styles.letter_p}>tecnologia</span> e inovação, almejo melhorar a vida das pessoas.
+          Sou apaixonado pela metamorfose, pelo novo, pelo desconhecido e claro, pela <span className={styles.letter_p}>tecnologia</span>.
         </p>
       </div>
       <div className={styles.p_content1}>
-        <h3>• Soft Skills</h3>
+        <h3>• SOFT skills</h3>
         <p>
-          Proativo, organizado, dinâmico e comunicativo, com habilidade em adaptar-se às novas rotinas e, facilidade no relacionamento interpessoal.
+          Proativo, organizado, dinâmico e comunicativo, com habilidade em <span className={styles.letter_p}>adaptar-se</span> às novas rotinas e, facilidade no relacionamento interpessoal.
         </p>
-        <h3>• Hard Skills</h3>
+        <h3>• HARD skills</h3>
         <p>
           HTML, CSS, SASS, Python, JavaScript, TypeScript, Redux, React, Context API, NodeJS, Express, Metodologias Ágeis, Componentes e Estados, React Hooks, Higher Order Functions, GitHub, Unix & Bash, Docker, MySQL, MongoDB, DynamoDB, AWS Cloud.
         </p>
@@ -54,6 +54,17 @@ function Body() {
       </div>
       <section className={styles.section_projects}>
         <h3>PROJETOS</h3>
+        <div className={styles.projects_content}>
+          <a href="https://github.com/vbreksidler/project_online_store">
+            Project Online Store
+          </a>
+          <a href="https://github.com/vbreksidler/project_delivery_app">
+            Delivery App
+          </a>
+          <a href="https://github.com/vbreksidler/project-patient-register">
+            Patient Register
+          </a>
+        </div>
         <div className={styles.container_work}>
           <div className={styles.carousel}>
             <div className={styles.carousel__face}><span>1</span></div>
@@ -63,21 +74,6 @@ function Body() {
           </div>
         </div>
       </section>
-      <div className={styles.projects_content}>
-        <a href="https://github.com/vbreksidler/project_online_store">
-          1 - Project Online Store
-        </a>
-      </div>
-      <div className={styles.projects_content}>
-        <a href="https://github.com/vbreksidler/project_delivery_app">
-          2 - Delivery App
-        </a>
-      </div>
-      <div className={styles.projects_content}>
-        <a href="https://github.com/vbreksidler/project-patient-register">
-          3 - Patient Register
-        </a>
-      </div>
       <section className={styles.content}>
         <div className={styles.content_btns}>
           {/* <a href="#down1">

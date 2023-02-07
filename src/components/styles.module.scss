@@ -251,13 +251,22 @@ h1 {
 }
 
 h3 {
+    letter-spacing: 5px;
     color: white;
     font-size: 2em;
+}
+
+h3:hover {
+    font-style: oblique;
 }
 
 h4 {
     color: rgb(171, 250, 169);
     font-size: 2em;
+}
+
+.letter_p {
+    color: rgb(76, 44, 105);
 }
 
 .info,
@@ -327,11 +336,14 @@ h4 {
     width: 100%;
     background: #000000;
     position: fixed;
-    left: 0;
+    // left: 0;
     bottom: 0;
     display: flex;
     flex-direction: row;
-    padding: 0 5%;
+    // padding: 0 5%;
+    max-height: 80px;
+
+    // padding-left: 41%;
 }
 
 .fixed_footer p {
@@ -340,51 +352,51 @@ h4 {
     column-gap: 50px;
     font-size: 1em;
     font-weight: 300;
+    max-height: 80px;
 }
 
-.content_footer {
-    width: 90%;
-    max-height: 80px;
-    display: inline-flex;
+
+.links {
+    align-self: center;
     justify-content: space-around;
+    padding-top: 2%;
+    background-color: #000000;
+    display: flex;
 }
 
 .links_content {
-    margin-right: 15px;
-    background-color: hsl(0, 0%, 0%);
-}
-
-.links {
-    padding-top: 5%;
-    padding-bottom: 5%;
-    background-color: #000000;
-    display: flex;
+    margin-left: 11%;
+    // align-self: center;
 }
 
 
 .icon_content {
     max-width: max-content;
     margin-right: 3%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-color: #000000;
-    display: flex;
 }
 
-.icons_linkedin {
-    padding-left: 10px;
-}
+// .icons_linkedin {
+//     padding-left: 5px;
+// }
 
-.icons_instagram {
-    padding-left: 10px;
-}
+// .icons_instagram {
+//     padding-left: 5px;
+// }
 
-.icons_github {
-    padding-left: 10px;
+// .icons_github {
+//     padding-left: 5px;
+// }
+
+.icons_vbr {
+    padding-left: 18%;
+    margin-right: 10px;
 }
 
 .p_footer {
-    margin-left: 25%;
+    // margin-left: 25%;
     margin-top: 2%;
     margin-bottom: 2%;
     display: flex;
@@ -392,36 +404,63 @@ h4 {
 }
 
 .projects_content {
-    width: 15%;
-    border-radius: 5px;
-    display: inline-block;
+    width: 20%;
+    margin-left: 5%;
+    // margin-right: 60%;
+    display: flex;
+    // align-items: flex;
+    flex-direction: column;
     align-items: center;
-    font-size: 1.5em;
-    align-content: center;
+    font-size: 1em;
+    // align-content: center;
 
     a {
-        color: rgb(130, 209, 115);
-        margin-left: 20px;
+        width: 20%;
+        letter-spacing: 4px;
+        line-height: 1.1;
+        width: 94px;
+        height: 75%;
+        border-radius: 3px;
+        margin: 20px;
+        margin-left: 50px;
+        padding: 25px;
+        padding-top: 20px;
+        padding-right: 40px;
+        border: 1px solid rgb(171, 250, 169);
+        border-radius: 3px;
+        color: rgb(171, 250, 169);
+        // margin-left: 20px;
+    }
+
+    a:hover {
+        font-style: oblique;
+        letter-spacing: 5px;
+        // width: 98px;
+        // height: 80%;
+        font-size: 1.009em;
+        border: 1px solid rgb(171, 250, 169);
+        color: rgb(76, 44, 105);
     }
 
 }
 
 
 .section_projects {
+    display: flexbox;
+    margin-left: 10%;
     font-size: 1.5em;
     font-family: 'Josefin Sans', sans-serif;
     width: 80%;
-    margin-left: 10%;
     border-top: solid 1px rgb(113, 255, 110);
-    height: 800px;
+    height: 1000px;
 }
 
 .container_work {
     position: relative;
-    width: 320px;
-    height: 350px;
-    margin: 100px auto 0 auto;
-    perspective: 2000px;
+    width: 50%;
+    height: 50%;
+    margin: 50px auto 0 auto;
+    perspective: 100%;
 }
 
 .carousel {
@@ -434,35 +473,34 @@ h4 {
 
 .carousel__face {
     position: absolute;
-    width: 600px;
+    width: auto;
     height: 374px;
     top: 20px;
     left: 10px;
     right: 10px;
     background-size: cover;
-    display: flex;
-    box-shadow: 0px 2px 2px 2px #53DD6C;
+    // display: flex;
 }
 
 
 .carousel__face:nth-child(1) {
     background-image: url("https://github.com/vbreksidler/project_online_store/blob/main/project-front-master-responsive.gif?raw=true");
-    transform: rotateY(0deg) translateZ(300px);
+    transform: rotateY(0deg) translateZ(500px);
 }
 
 .carousel__face:nth-child(2) {
     background-image: url("https://github.com/vbreksidler/portifoliovbr/blob/master/src/images/output_name.gif?raw=true");
-    transform: rotateY(90deg) translateZ(300px);
+    transform: rotateY(90deg) translateZ(500px);
 }
 
 .carousel__face:nth-child(3) {
     background-image: url("https://github.com/vbreksidler/project-patient-register/blob/master/patient-register/public/60120.gif?raw=true");
-    transform: rotateY(180deg) translateZ(300px);
+    transform: rotateY(180deg) translateZ(500px);
 }
 
 .carousel__face:nth-child(4) {
     background-image: url("");
-    transform: rotateY(270deg) translateZ(300px);
+    transform: rotateY(270deg) translateZ(500px);
 }
 
 
