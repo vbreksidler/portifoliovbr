@@ -14,7 +14,7 @@
     "scss": "^0.2.4",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://vbreksidler.github.io/",
+  "homepage": "https://vbreksidler.github.io/portifoliovbr",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
