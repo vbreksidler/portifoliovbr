@@ -23,12 +23,12 @@ function Body() {
               Patient Register
             </a>`
     },
-    // {
-    //   image: "https://i.ibb.co/xCyJ98n/pocoesdaterra.gif",
-    //   caption: `<a href="https://pocoesdaterra.com.br/">
-    //           Poções da Terra
-    //         </a>`
-    // },
+    {
+      image: "https://github.com/vbreksidler/portifoliovbr/blob/master/public/pocoesdaterra.gif?raw=true",
+      caption: `<a href="https://pocoesdaterra.com.br/">
+              Poções da Terra
+            </a>`
+    },
   ];
 
   const captionStyle = {
@@ -39,7 +39,6 @@ function Body() {
     fontSize: '20px',
     fontWeight: 'bold',
   }
-  //test
 
 
   return (
@@ -82,7 +81,7 @@ function Body() {
           }}>
             <Carousel
               data={data}
-              time={3000}
+              time={4500}
               width="850px"
               height="500px"
               captionStyle={captionStyle}
@@ -92,8 +91,6 @@ function Body() {
               captionPosition="bottom"
               automatic={true}
               dots={true}
-              pauseIconColor="white"
-              pauseIconSize="40px"
               slideBackgroundColor="darkgrey"
               slideImageFit="cover"
               thumbnails={true}
