@@ -16,15 +16,15 @@
 //header
 
 .body_page {
-    border: solid 5px rgb(113, 255, 110);
-    border-top: none;
+    border: solid 2px rgb(113, 255, 110);
+    // border-top: none;
     background: rgb(19, 19, 19);
     box-shadow: 0px 0px 100px 10px rgb(113, 255, 110);
     padding-top: 5%;
 }
 
 a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -226,7 +226,6 @@ h4 {
 }
 
 .p_content {
-    border-top: solid 1px rgb(113, 255, 110);
     text-shadow: 0 10px 10px black;
     margin-left: 10%;
     margin-right: 10%;
@@ -290,117 +289,6 @@ h4 {
     background-color: #000000;
 }
 
-
-.projects_content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    font-size: 1em;
-    min-width: 175px;
-
-    a {
-        min-width: 175px;
-        width: 50%;
-        letter-spacing: 1px;
-        line-height: 1.1;
-        width: 94px;
-        height: 75%;
-        border-radius: 3px;
-        margin: 1%;
-        left: 45%;
-        padding: 25px;
-        padding-top: 20px;
-        padding-right: 20px;
-        border: 1px solid rgb(171, 250, 169);
-        border-radius: 3px;
-        color: rgb(171, 250, 169);
-    }
-
-    a:hover {
-        font-style: oblique;
-        letter-spacing: 2px;
-        font-size: 1.009em;
-        border: 1px solid rgb(171, 250, 169);
-        color: white;
-    }
-
-    p {
-        text-shadow: 0 10px 10px black;
-        margin-bottom: 100px;
-        padding: 1%;
-        color: white;
-        font-size: 0.8em;
-        font-family: 'Josefin Sans', sans-serif;
-    }
-
-}
-
-.gif_store {
-    margin-top: 50px;
-    margin-left: 10%;
-    background-size: cover;
-    width: auto;
-    max-width: 80%;
-    min-height: 450px;
-    height: auto;
-    background-image: url("https://github.com/vbreksidler/project_online_store/blob/main/project-front-master-responsive.gif?raw=true")
-}
-
-.gif_delivery {
-    margin-top: 50px;
-    margin-left: 10%;
-    background-size: cover;
-    width: auto;
-    max-width: 80%;
-    min-height: 450px;
-    height: auto;
-    background-image: url("https://github.com/vbreksidler/portifoliovbr/blob/master/src/images/output_name.gif?raw=true")
-}
-
-.gif_patient {
-    margin-top: 50px;
-    margin-left: 10%;
-    background-size: cover;
-    width: auto;
-    max-width: 80%;
-    min-height: 450px;
-    height: auto;
-    background-image: url("https://github.com/vbreksidler/project-patient-register/blob/master/patient-register/public/60120.gif?raw=true")
-}
-
 .section_projects {
-    display: flexbox;
-    margin-left: 10%;
-    font-size: 1.5em;
-    font-family: 'Josefin Sans', sans-serif;
-    width: 80%;
-    border-top: solid 1px rgb(113, 255, 110);
-}
-
-@media screen and (max-width: 500px) {
-    .gif_store {
-        margin-top: 50px;
-        width: auto;
-        height: auto;
-        max-width: 200px;
-        min-height: 400px;
-    }
-
-    .gif_delivery {
-        margin-top: 50px;
-        width: auto;
-        height: auto;
-        max-width: 200px;
-        min-height: 400px;
-    }
-
-    .gif_patient {
-        margin-top: 50px;
-        width: auto;
-        height: auto;
-        max-width: 200px;
-        min-height: 400px;
-    }
-
+    margin-bottom: 20%;
 }

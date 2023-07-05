@@ -1,23 +1,38 @@
 import React from "react";
 import styles from '../components/styles.module.scss';
+import { Carousel } from 'react-carousel-minimal';
 
 function Body() {
 
-  // const [openMenu, setOpenMenu] = useState(false);
-  // const [openMenu1, setOpenMenu1] = useState(false);
-  // const [openMenu2, setOpenMenu2] = useState(false);
+  const data = [
+    {
+      image: "https://github.com/vbreksidler/project_online_store/blob/main/project-front-master-responsive.gif?raw=true",
+      caption: `<a href="https://github.com/vbreksidler/project_online_store">
+              Online Store
+            </a>`
+    },
+    {
+      image: "https://github.com/vbreksidler/portifoliovbr/blob/master/src/images/output_name.gif?raw=true",
+      caption: `            <a href="https://github.com/vbreksidler/project_delivery_app">
+      Delivery App
+    </a>`
+    },
+    {
+      image: "https://github.com/vbreksidler/project-patient-register/blob/master/patient-register/public/60120.gif?raw=true",
+      caption: `            <a href="https://github.com/vbreksidler/project-patient-register">
+      Patient Register
+    </a>`
+    },
+  ];
 
-  // const toggleMenu = () => {
-  //   setOpenMenu(!openMenu);
-  // };
-
-  // const toggleMenu1 = () => {
-  //   setOpenMenu1(!openMenu1);
-  // };
-
-  // const toggleMenu2 = () => {
-  //   setOpenMenu2(!openMenu2);
-  // };
+  const captionStyle = {
+    fontSize: '2em',
+    fontWeight: 'bold',
+  }
+  const slideNumberStyle = {
+    fontSize: '20px',
+    fontWeight: 'bold',
+  }
 
 
   return (
@@ -36,7 +51,7 @@ function Body() {
         </p>
         <h3>• HARD skills</h3>
         <p>
-          HTML, CSS, SASS, Python, JavaScript, TypeScript, Redux, React, Context API, NodeJS, Express, Metodologias Ágeis, Componentes e Estados, React Hooks, Higher Order Functions, GitHub, Unix & Bash, Docker, MySQL, MongoDB, DynamoDB, AWS Cloud.
+          HTML, CSS, SASS, Python, JavaScript, TypeScript, Redux, React, Context API, NodeJS, Express, Metodologias Ágeis, Componentes e Estados, Higher Order Functions, GitHub, Unix & Bash, Docker, MySQL, MongoDB, DynamoDB, AWS Cloud.
         </p>
         <div className={styles.icons}>
           <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/react/react-original-wordmark.svg" title="React" alt="React" width="40" height="40" />&nbsp;
@@ -54,35 +69,35 @@ function Body() {
       </div>
       <section className={styles.section_projects}>
         <h3>PROJETOS</h3>
-        <div className={styles.projects_content}>
-          <div className={styles.p_section_projects}>
-            <a href="https://github.com/vbreksidler/project_online_store">
-              Online Store
-            </a>
-            <div className={styles.gif_store}></div>
-            <p> O projeto possui design responsivo, e o objetivo é um carrinho de compras online, onde a pessoa usuária pode adicionar, remover, alterar, verificar
-              detalhes dos produtos, finalizar a compra e fazer checkout.
-
-            </p>
-          </div>
-          <div className={styles.p_section_projects}>
-            <a href="https://github.com/vbreksidler/project_delivery_app">
-              Delivery App
-            </a>
-            <div className={styles.gif_delivery}></div>
-            <p>Esse é um aplicativo full-stack, ou seja, possuí integração entre o front-end e o back-end. O objetivo é solucionar o problema do cliente,
-              com um sistema que deve possuir:
-              Acesso via login com funções diferentes(comprador, vendedor e administrador).
-              Fazer a comunicação entre clientes e pessoas vendedoras.
-              A pessoa cliente deve ter informações se o pedido está sendo preparado ou se já saiu pra entrega.
-            </p>
-          </div>
-          <div className={styles.p_section_projects}>
-            <a href="https://github.com/vbreksidler/project-patient-register">
-              Patient Register
-            </a>
-            <div className={styles.gif_patient}></div>
-            <p>É um projeto desafio, e o objetivo é uma aplicação web (CRUD) para gerenciar os registros de pacientes (nome do paciente, data de nascimento, e-mail e endereço), serverless, usando um banco de dados em nuvem.</p>
+        <div style={{ textAlign: "center" }}>
+          <div style={{
+            padding: "0 20px"
+          }}>
+            <Carousel
+              data={data}
+              time={3000}
+              width="850px"
+              height="500px"
+              captionStyle={captionStyle}
+              radius="10px"
+              slideNumber={true}
+              slideNumberStyle={slideNumberStyle}
+              captionPosition="bottom"
+              automatic={true}
+              dots={true}
+              pauseIconColor="white"
+              pauseIconSize="40px"
+              slideBackgroundColor="darkgrey"
+              slideImageFit="cover"
+              thumbnails={true}
+              thumbnailWidth="100px"
+              style={{
+                textAlign: "center",
+                maxWidth: "850px",
+                maxHeight: "500px",
+                margin: "40px auto",
+              }}
+            />
           </div>
         </div>
       </section>
