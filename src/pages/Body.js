@@ -13,15 +13,15 @@ function Body() {
     },
     {
       image: "https://github.com/vbreksidler/portifoliovbr/blob/master/src/images/output_name.gif?raw=true",
-      caption: `            <a href="https://github.com/vbreksidler/project_delivery_app">
-      Delivery App
-    </a>`
+      caption: `<a href="https://github.com/vbreksidler/project_delivery_app">
+              Delivery App
+            </a>`
     },
     {
       image: "https://github.com/vbreksidler/project-patient-register/blob/master/patient-register/public/60120.gif?raw=true",
-      caption: `            <a href="https://github.com/vbreksidler/project-patient-register">
-      Patient Register
-    </a>`
+      caption: `<a href="https://github.com/vbreksidler/project-patient-register">
+              Patient Register
+            </a>`
     },
   ];
 
