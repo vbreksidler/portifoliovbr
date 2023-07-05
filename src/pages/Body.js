@@ -23,6 +23,12 @@ function Body() {
               Patient Register
             </a>`
     },
+    // {
+    //   image: "https://i.ibb.co/xCyJ98n/pocoesdaterra.gif",
+    //   caption: `<a href="https://pocoesdaterra.com.br/">
+    //           Poções da Terra
+    //         </a>`
+    // },
   ];
 
   const captionStyle = {
